@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Vitta - Vida ao seu Pet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contato.css">
+
+</head>
+
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo-color.png" alt="Arte de um cachorro e gato">
+        
+        <nav>
+            <ul>
+                <li><a href="./index.html">PÁGINA INICIAL</a></li>
+                <li><a href="./petshops.html">PET SHOPS</a></li>
+                <li><a href="./clinicasveterinarias.html">CLINICAS</a></li>
+                <li><a href="./contato.html">CONTATO</a></li>
+                <li><a href="./areadocliente.html">ÁREA DO CLIENTE</a></li>
+            </ul>
+        </nav>
+ 
+
+        <form class="example" action="action_page.php">
+            <input type="text" placeholder="Busca..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+    </header>
+
+<main>
+
+<section>
+    <form action="/usuarios" method="post" enctype="multipart/form-data">
+        <h1>Alguma dúvida ou sugestão?</h1>
+        <br>
+    
+
+        <div class="input-group">
+            <!-- O label com "for" referencia o nosso input -->
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome">
+        </div>
+
+        <div class="input-group">
+
+            <label for="email">Email</label>
+            <!-- O type email força com que o usuário digite um email e não um texto qualquer -->
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="input-group">
+            <label for="telefone">Telefone</label>
+            <!-- O campo required força o usuário a preencher este campo, quando for inserido o submit -->
+            <input type="text" id="telefone" name="telefone" required>
+        </div>
+
+       
+
+       
+        <div class="input-group">
+            <p>Qual a melhor forma para entrarmos em contato com você?</p>
+
+            <!-- Mantemos os checkbox com o mesmo "name" pois estão no mesmo grupo -->
+            <!-- No caso do radio om mesmo "name" também garante que apenas um radio será selecionado -->
+            <div>
+                <input type="radio" id="melhor-email" name="disponibilidade" value="email">
+                <label for="melhor-email">Email</label>
+
+                <input type="radio" id="melhor-ligacao" name="disponibilidade" value="ligacao">
+                <label for="melhor-ligacao">Ligação</label>
+
+                <input type="radio" id="melhor-whatsapp" name="disponibilidade" value="whatsapp">
+                <label for="melhor-whatsapp">Whatsapp</label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
+        </div>
+
+
+
+        <!-- Quando o botão é do tipo submit, ele irá enviar o formulário com o method e action informado no form -->
+        <button type="submit">Enviar</button>
+    </form>
+
+    <aside>
+        
+        <p>
+            Priorizando um bom atendimento, a Pet Vitta atua focada na plena satisfação de cada cliente, e claro, de cada animal beneficiado com os produtos e serviços oferecidos.
+            
+        </p>
+
+        <br>
+
+        <p>
+            Conheça a Pet Vitta. Um espaço para quem ama, se dedica e não mede esforços para retribuir todo o carinho e alegria que recebe diariamente de seu pet.
+        </p>
+
+       
+    </aside>
+    </section>
+</main>
+
+
+<footer>
+    <div>
+        <div class="logo">
+        <img src="./img/logo-branco.png" width="320" height="205" alt="Logo Branco"></div>
+
+            <p>
+                Nosso foco é a saúde e o bem estar de seu animal de estimação, em todas os momentos, seja na hora do banho e tosa ou no atendimento veterinário.
+            </p>
+        </div>
+
+        <ul>
+          <li class="title">CATEGORIAS</li>
+          <br>
+          <li><a href="https://www.google.com.br/">Banho e Tosa</a></li>
+          <li><a href="https://www.google.com.br/">Consultas e Exames</a></li>
+          <li><a href="https://www.google.com.br/">Dicas</a></li>
+        </ul>
+
+        <ul>
+          <li class="title">INSTITUCIONAL </li>
+          <br>
+          <li><a href="https://www.google.com.br/">Sobre nós</a></li>
+          <li><a href="https://www.google.com.br/">Perguntas frequentes</a></li>
+          <li><a href="https://www.google.com.br/">Politica de privacidade</a></li>
+          <li><a href="https://www.google.com.br/">Rastreamento de Consultas</a></li>
+          <li><a href="https://www.google.com.br/">Fale Conosco</a></li>
+          <li><a href="https://www.google.com.br/">Contato</a></li>
+        </ul>
+
+        <ul>
+          <li class="title">REDES SOCIAIS</li>
+
+        <div class="social">
+          <a href="http://www.facebook.com">
+            <img src="./img/facebook.png" alt="Facebook"></a>
+          <a href="http://youtube.com">
+            <img src="./img/youtube.png" alt="Youtube"></a>
+          <a href="http://www.instagram.com">
+            <img src="./img/instagram.png" alt="Instagram"></a>
+        </ul>
+</footer>
+</body>
+
+</html>

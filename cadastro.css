@@ -1,0 +1,99 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: white;    
+}
+main {
+    margin: 20px;
+   
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 20px;
+    background: #35bddd;
+    border: 3px solid black;
+}
+
+#container {
+    border: 3px solid black;
+    background: #35bddd;
+}
+
+h2 {
+    font-size:20px;
+    padding-left: 35px;
+    padding-top: 20px;
+    margin-top: 15px;
+    
+}
+
+.formulario {
+    padding: 10px 35px;
+}
+
+.formulario label {
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.formulario input {
+    width: 538px;
+    height: 26px;
+    background: #FFFFFF;
+    border: 1px solid #9B9B9B;
+    margin-top: 10px;
+}
+
+.enviar {
+    padding-left: 175px;
+}
+
+.formulario p input {
+    width: 100px;
+}
+
+.formulario select {
+    width: 538px;
+    height: 26px;
+    background: #FFFFFF;
+    border: 1px solid;
+    margin-top: 10px;
+}
+
+.sessao-formulario {
+    width: 1050px;
+    display: flex;
+}
+
+form div {
+    margin-top: 15px;
+} 
+
+#senha {
+    margin-left: 22px;
+    width: 200px;
+}
+
+#confirme-senha {
+    margin-left: 5px;
+    width: 200px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+#container p {
+    margin: 20px 0px 20px 35px;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+

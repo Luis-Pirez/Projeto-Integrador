@@ -1,0 +1,59 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0px;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 60px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 44px;
+    color: #ffffff;
+}
+
+main {
+    padding-top: 20px;
+}
+
+section#servicos {
+    background: #35BDDD;
+    padding: 5px 61px 61px 61px;
+}
+
+section#servicos h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.container {
+    width: 780px;
+    height: 420px;
+    overflow: hidden;
+}
+
+.container .card {
+   width: 500%;
+   animation-name: animacao-carrocel;
+   animation-duration: 20s;
+   animation-iteration-count: infinite;
+}
+
+#carrocel {
+    display: flex;
+   justify-content: center;
+}
+
+.card img {
+    width: 19.9%;
+    object-fit: cover;
+}
+
+
+
+

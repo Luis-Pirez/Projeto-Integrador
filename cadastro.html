@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Vitta - Vida ao seu Pet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cadastro.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo-color.png" alt="Arte de um cachorro e gato">
+        
+        <nav>
+            <ul>
+                <li><a href="./index.html">PÁGINA INICIAL</a></li>
+                <li><a href="./petshops.html">PET SHOPS</a></li>
+                <li><a href="./clinicasveterinarias.html">CLINICAS</a></li>
+                <li><a href="./contato.html">CONTATO</a></li>
+                <li><a href="./areadocliente.html">ÁREA DO CLIENTE</a></li>
+            </ul>
+        </nav>
+ 
+
+        <form class="example" action="action_page.php">
+            <input type="text" placeholder="Busca..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+
+    </header>
+
+    <main>
+        <h1>Cadastre-se</h1>
+        <div id="container">
+            <h2>Dados Pessoais</h2>
+            <section class="sessao-formulario">
+                <form class="formulario" action="cadastro" method="post">
+                    <div>
+                        <label for="nome">Nome:</label> 
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div>
+                        <label for="cpf">CPF:</label>
+                        <input type="text" placeholder="111.111.111-11" inputmode="number" minlength="11"
+                        maxlength="14" name="cpf" id="cpf">
+                    </div>
+                    <div>
+                        <label for="data-nascimento">Data de Nascimento:</label>
+                        <input type="date" name="data-nascimento" id="data-nascimento">
+                    </div>
+                </form>
+                            
+                <form class="formulario" action="cadastro" method="post">
+                    <div>
+                        <label for="telefone">Telefone:</label>
+                        <input type="text" placeholder="(11) 99999-9999" inputmode="number" minlength="9"
+                        maxlength="15" name="telefone" id="telefone">
+                    </div>
+                    <div>
+                        <label for="sexo">Sexo:</label>
+                            <select name="sexo" id="sexo">
+                                <option value=""></option>
+                                <option value="">Masculino</option>
+                                <option value="">Feminino</option>
+                            </select>
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    
+                </form>
+    
+            </section>
+                    <h2>Dados de Correspondência</h2>
+            <section class="sessao-formulario">
+                <form class="formulario" action="cadastro" method="post">
+                    <div>
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" name="endereco" id="endereco">
+                    </div>
+                    <div>
+                        <label for="cep">CEP:</label> 
+                        <input type="text" placeholder="00000-000" inputmode="number" minlength="8"
+                        maxlength="9"name="cep" id="cep">
+                    </div>
+                    <div>
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" name="bairro" id="bairro">
+                    </div>
+                                  
+                </form>
+                <form class="formulario" action="cadastro" method="post">
+                    <div>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade">
+                    </div>
+                    <div>
+                        <label for="estado">Estado:</label>
+                            <select name="estado" id="estado">
+                                <option value=""></option>
+                                <option value="">AC</option>
+                                <option value="">AL</option>
+                                <option value="">AP</option>
+                                <option value="">AM</option>
+                                <option value="">BA</option>
+                                <option value="">CE</option>
+                                <option value="">DF</option>
+                                <option value="">ES</option>
+                                <option value="">GO</option>
+                                <option value="">MA</option>
+                                <option value="">MT</option>
+                                <option value="">MS</option>
+                                <option value="">MG</option>
+                                <option value="">PA</option>
+                                <option value="">PB</option>
+                                <option value="">PR</option>
+                                <option value="">PE</option>
+                                <option value="">PI</option>
+                                <option value="">RJ</option>
+                                <option value="">RN</option>
+                                <option value="">RS</option>
+                                <option value="">RO</option>
+                                <option value="">RR</option>
+                                <option value="">SC</option>
+                                <option value="">SP</option>
+                                <option value="">SE</option>
+                                <option value="">TO</option>
+                            </select>
+                    </div>
+                    <div>
+                        <label for="ponto-referencia">Ponto de Referência:</label>
+                        <input type="text" name="cidade" id="ponto-referencia">
+                    </div>
+                    
+                </form>
+            </section>
+            <h2>Dados do Pet</h2>
+            <section class="sessao-formulario">
+                <form class="formulario" action="cadastro" method="post">
+                    <div>
+                        <label for="nome-pet">Nome do Pet:</label> 
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div>
+                        <label for="raca">Raça:</label>
+                        <input type="text" name="raca" id="raca">
+                    </div>
+                    <div>
+                        <label for="idade">Idade:</label>
+                        <input type="text" name="idade" id="idade">
+                    </div>
+                                    
+                </form>
+                <form class="formulario" action="cadastro" method="post">
+                    <div>
+                        <label for="porte">Porte:</label>
+                        <input type="text" name="porte" id="porte">
+                    </div>
+                    <div>
+                        <label for="peso">Peso:</label>
+                        <input type="text" name="peso" id="peso">
+                    </div>
+                </form>
+    
+            </section>
+            <h2>Senha</h2>
+            <section class="sessao-formulario">
+                <form class="formulario" action="cadastro" method="post">
+                    <div>
+                        <label for="senha">Digite uma Senha:</label> 
+                        <input type="password" name="senha" id="senha">
+                    </div>
+                    <div>
+                        <label for="confirme-senha">Confirme sua Senha:</label>
+                        <input type="password" name="confirme-senha" id="confirme-senha">
+                    </div>
+                    <p class="enviar"> 
+                        <input type="submit" value="Enviar"/> 
+                      </p>
+                </form>
+                                  
+            </section>
+
+            <h3>Importante</h3>
+            <p>Após finalisar o seu cadastro você receberá um email de confirmação contendo os seus dados, certifique-se que os seus dados estão corretos para evitar futuros transtornos.</p>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div>
+            <div class="logo">
+            <img src="./img/logo-branco.png" width="320" height="205" alt="Logo Branco"></div>
+    
+                <p>
+                    Nosso foco é a saúde e o bem estar de seu animal de estimação, em todas os momentos, seja na hora do banho e tosa ou no atendimento veterinário.
+                </p>
+            </div>
+    
+            <ul>
+              <li class="title">CATEGORIAS</li>
+              <br>
+              <li><a href="https://www.google.com.br/">Banho e Tosa</a></li>
+              <li><a href="https://www.google.com.br/">Consultas e Exames</a></li>
+              <li><a href="https://www.google.com.br/">Dicas</a></li>
+            </ul>
+    
+            <ul>
+              <li class="title">INSTITUCIONAL </li>
+              <br>
+              <li><a href="https://www.google.com.br/">Sobre nós</a></li>
+              <li><a href="https://www.google.com.br/">Perguntas frequentes</a></li>
+              <li><a href="https://www.google.com.br/">Politica de privacidade</a></li>
+              <li><a href="https://www.google.com.br/">Rastreamento de Consultas</a></li>
+              <li><a href="https://www.google.com.br/">Fale Conosco</a></li>
+              <li><a href="https://www.google.com.br/">Contato</a></li>
+            </ul>
+    
+            <ul>
+              <li class="title">REDES SOCIAIS</li>
+    
+            <div class="social">
+              <a href="http://www.facebook.com">
+                <img src="./img/facebook.png" alt="Facebook"></a>
+              <a href="http://youtube.com">
+                <img src="./img/youtube.png" alt="Youtube"></a>
+              <a href="http://www.instagram.com">
+                <img src="./img/instagram.png" alt="Instagram"></a>
+            </ul>
+</body>
+
+</html>

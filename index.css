@@ -1,0 +1,31 @@
+section#detailed .botao-agendar {
+    width: 250px;
+    height: 70px;
+    background: #d7891c;
+    object-fit:cover;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 50px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    
+  }
+
+section#detailed button {
+    width: 350px;
+    height: 100px;
+    background: #d7891c;
+    object-fit:cover;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 39px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    margin-bottom: 50px;
+}
