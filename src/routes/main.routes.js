@@ -3,7 +3,8 @@ const router = express.Router();
 
 const mainController = require('../controllers/mainController');
 
-router.get('/index', mainController.index);
+router.get('/', mainController.index);
+router.get('/index', mainController.paginaInicial);
 router.get('/petshops', mainController.petshops);
 router.get('/clinicasveterinarias', mainController.clinicasVeterinarias);
 router.get('/contato', mainController.contato);

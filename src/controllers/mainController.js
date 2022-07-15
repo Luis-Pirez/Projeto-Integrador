@@ -1,8 +1,8 @@
 const fs = require('fs');
-
+const path = require('path');
 const mainController = {
 	index: (request, response) => {
-		response.render('index')
+		response.render('./index')
 	},
 
 	petshops: (request, response) => {
@@ -23,10 +23,14 @@ const mainController = {
 	
 	areaDoCliente: (request, response) => {
 		response.render('areadocliente')
-	},		
+	},	
+
+	paginaInicial: (request, response) => {
+		response.render('index')
+	},			
 		
 	search: (request, response) => {
-		// Do the magic
+		
 	}
 };
 
