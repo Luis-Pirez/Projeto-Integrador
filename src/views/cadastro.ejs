@@ -38,7 +38,7 @@
         <div id="container">
             <h2>Dados Pessoais</h2>
             <section class="sessao-formulario">
-                <form class="formulario" action="cadastro" method="post">
+                <form class="formulario" action="/users" method="post">
                     <div>
                         <label for="nome">Nome:</label> 
                         <input type="text" name="nome" id="nome">
@@ -49,12 +49,12 @@
                         maxlength="14" name="cpf" id="cpf">
                     </div>
                     <div>
-                        <label for="data-nascimento">Data de Nascimento:</label>
-                        <input type="date" name="data-nascimento" id="data-nascimento">
+                        <label for="data_nascimento">Data de Nascimento:</label>
+                        <input type="date" name="data_nascimento" id="data_nascimento">
                     </div>
                 </form>
                             
-                <form class="formulario" action="cadastro" method="post">
+                <form class="formulario" action="/users" method="post">
                     <div>
                         <label for="telefone">Telefone:</label>
                         <input type="text" placeholder="(11) 99999-9999" inputmode="number" minlength="9"
@@ -78,7 +78,7 @@
             </section>
                     <h2>Dados de Correspondência</h2>
             <section class="sessao-formulario">
-                <form class="formulario" action="cadastro" method="post">
+                <form class="formulario" action="/users" method="post">
                     <div>
                         <label for="endereco">Endereço:</label>
                         <input type="text" name="endereco" id="endereco">
@@ -94,7 +94,7 @@
                     </div>
                                   
                 </form>
-                <form class="formulario" action="cadastro" method="post">
+                <form class="formulario" action="/users" method="post">
                     <div>
                         <label for="cidade">Cidade:</label>
                         <input type="text" name="cidade" id="cidade">
@@ -133,18 +133,18 @@
                             </select>
                     </div>
                     <div>
-                        <label for="ponto-referencia">Ponto de Referência:</label>
-                        <input type="text" name="cidade" id="ponto-referencia">
+                        <label for="ponto_referencia">Ponto de Referência:</label>
+                        <input type="text" name="ponto_referencia" id="ponto_referencia">
                     </div>
                     
                 </form>
             </section>
             <h2>Dados do Pet</h2>
             <section class="sessao-formulario">
-                <form class="formulario" action="cadastro" method="post">
+                <form class="formulario" action="/users" method="post">
                     <div>
-                        <label for="nome-pet">Nome do Pet:</label> 
-                        <input type="text" name="nome" id="nome">
+                        <label for="nome_pet">Nome do Pet:</label> 
+                        <input type="text" name="nome_pet" id="nome_pet">
                     </div>
                     <div>
                         <label for="raca">Raça:</label>
@@ -156,7 +156,7 @@
                     </div>
                                     
                 </form>
-                <form class="formulario" action="cadastro" method="post">
+                <form class="formulario" action="/users" method="post">
                     <div>
                         <label for="porte">Porte:</label>
                         <input type="text" name="porte" id="porte">
@@ -170,14 +170,14 @@
             </section>
             <h2>Senha</h2>
             <section class="sessao-formulario">
-                <form class="formulario" action="cadastro" method="post">
+                <form class="formulario" action="/users" method="post">
                     <div>
                         <label for="senha">Digite uma Senha:</label> 
                         <input type="password" name="senha" id="senha">
                     </div>
                     <div>
-                        <label for="confirme-senha">Confirme sua Senha:</label>
-                        <input type="password" name="confirme-senha" id="confirme-senha">
+                        <label for="confirme_senha">Confirme sua Senha:</label>
+                        <input type="password" name="confirme_senha" id="confirme_senha">
                     </div>
                     <p class="enviar"> 
                         <input type="submit" value="Enviar"/> 
