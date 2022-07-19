@@ -1,7 +1,9 @@
 const express = require('express');
-const router = express.Router();
+const { Router } = require('express')
+const router = Router();
 
 const mainController = require('../controllers/mainController');
+const authRouter = require('./auth.routes');
 
 router.get('/', mainController.index);
 router.get('/index', mainController.paginaInicial);
