@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-//const { petshops } = require('./mainController');
+const bcrypt = require('bcryptjs');
 const {v4: uuid} = require('uuid');
 const userPath = path.join(__dirname, '..', 'database', 'users.json');
 const usersController = {
@@ -8,6 +8,7 @@ const usersController = {
         return response.render('cadastro');
     },
     create: (request, response) => {
+        const { password } = request.body;
         const { nome, cpf, dataDeNascimento, telefone, sexo,
             email, endereco, cep, bairro, cidade, estado,
             pontoDeReferencia, nomeDoPet,
@@ -16,10 +17,10 @@ const usersController = {
             const passwordHash = bcrypt.hashSync(password);
         
         const newUser = {
-            id: uuid(), nome, cpf, data_nascimento, telefone, sexo,
+            id: uuid(), nome, cpf, dataDeNascimento, telefone, sexo,
             email, endereco, cep, bairro, cidade, estado,
-            ponto_referencia, nome_pet,
-            raca, idade, porte, peso, senha: passwordHash, confirme_senha: passwordHash
+            pontoDeReferencia, nomeDoPet,
+            raca, idade, porte, peso, senha: passwordHash, confirmeSenha: passwordHash
         }
 
         const users = JSON.parse(fs.readFileSync(userPath));
