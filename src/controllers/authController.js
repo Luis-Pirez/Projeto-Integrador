@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const bcrypt = require('bcryptjs');
 const authController = {
     getLogin: (request, response) => {
         return response.render('areadocliente');

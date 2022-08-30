@@ -4,6 +4,6 @@ const usersRouter = Router();
 
 const usersController = require('../controllers/usersController');
 usersRouter.get('/cadastro', usersController.getCreate);
-usersRouter.post('/create', usersController.create);
+usersRouter.post('/', usersController.create);
 
 module.exports = usersRouter;
